@@ -1,18 +1,82 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
+    <!--<button ion-button menuToggle>-->
+      <!--<ion-icon name="menu"></ion-icon>-->
+    <!--</button>-->
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <h3>Patient Info</h3>
+  <ion-list>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <ion-item>
+      <ion-label>Aadhaar</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Phone</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Place</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+  </ion-list>
+  <h3>Symptoms</h3>
+
+  <ion-item class="temper">
+    <ion-label>Temperature</ion-label>
+    <ion-input type="number"></ion-input>
+
+  </ion-item>
+  <!--<ion-label>C|F</ion-label>-->
+  <div class="symp-list">
+    <div class="symp-item">
+      <span class="YesNoTitle">Headache</span>
+      <span class="yesNoSpan">
+      <ion-checkbox class="YesNoChck" color="dark" checked="true"></ion-checkbox>
+      <span class="YesNoL">Yes</span>
+      <ion-checkbox class="YesNoChck" color="dark" checked="false"></ion-checkbox>
+      <span class="YesNoL">No</span>
+      </span>
+    </div>
+
+    <div class="symp-item">
+      <span class="YesNoTitle">Confusion</span>
+      <span class="yesNoSpan">
+      <ion-checkbox class="YesNoChck" color="dark" checked="true"></ion-checkbox>
+      <span class="YesNoL">Yes</span>
+      <ion-checkbox class="YesNoChck" color="dark" checked="false"></ion-checkbox>
+      <span class="YesNoL">No</span>
+        </span>
+    </div>
+    <div class="symp-item">
+      <span class="YesNoTitle">Chills</span>
+      <span class="yesNoSpan">
+      <ion-checkbox class="YesNoChck" color="dark" checked="true"></ion-checkbox>
+      <span class="YesNoL">Yes</span>
+      <ion-checkbox class="YesNoChck" color="dark" checked="false"></ion-checkbox>
+      <span class="YesNoL">No</span>
+      </span>
+    </div>
+
+  </div>
+  <button ion-button menuToggle (click)="scanYourSample()">
+  scan your sample
+  </button>
+  <!--<p>-->
+  <!--If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.-->
+  <!--</p>-->
+
+  <!--<button ion-button secondary menuToggle>Toggle Menu</button>-->
 </ion-content>

@@ -1,3 +1,37 @@
 page-home {
+  .content-md {
+    background-color: rgb(222, 240, 250);
+  }
+  h3 {
+    color: rgb(46, 83, 149);
+  }
+  .item-input {
+    .label {
+      color: rgb(77, 99, 159);
+    }
+  }
+  .temper {
+    width: 60%;
+  }
+ .symp-list {
+   width: 60%;
+   .symp-item {
+     margin-top: 20px;
+     .yesNoSpan{
+       float: right;
+     }
+     .YesNoChck {
+       margin-right: 3px;
+     }
+     .YesNoL {
+       margin-right: 5px;
+       color: rgb(77, 99, 159);
+     }
+     .YesNoTitle {
+       font-size: 16px;
+       //margin-right: 40px;
+     }
+   }
+ }
 
 }
