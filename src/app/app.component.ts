@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { SampleScanPage } from '../pages/sample-scan/sample-scan';
+import { BloodCountPage } from '../pages/blood-count/blood-count';
 
 @Component({
   templateUrl: 'app.html'
@@ -13,7 +14,7 @@ import { SampleScanPage } from '../pages/sample-scan/sample-scan';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = SampleScanPage;
+  rootPage: any = BloodCountPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -24,7 +25,7 @@ export class MyApp {
     this.pages = [
 
        { title: 'Sample scan', component: SampleScanPage },
-      { title: 'Blood count', component: SampleScanPage },
+      { title: 'Blood count', component: BloodCountPage },
       { title: 'Malaria test', component: ListPage },
       { title: 'Add G6PD test', component: ListPage },
       { title: 'Expert advice', component: ListPage },
