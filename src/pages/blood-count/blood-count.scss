@@ -1,0 +1,74 @@
+page-blood-count {
+  .segment-item {
+    font-weight: bold;
+    color: #000;
+    font-size: 12px;
+  }
+  .graph{
+    background-color: rgb(76, 118, 192);
+  }
+  .slidecontainer {
+   width: 100%;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: rgb(76, 118, 192);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(241, 137, 121);
+    cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(241, 137, 121);
+  }
+  .max-val{
+    float: right;
+  }
+  .wbc-value{
+    font-size: 17px;
+    float: right;
+    line-height: 30px;
+  }
+  .item-divider-md{
+    background-color: rgb(222, 240, 250);
+    font-size: 14px;
+    .name{
+      float: left;
+    }
+    .val{
+      left: 60%;
+      position: absolute;
+    }
+  }
+  .results{
+    padding-top: 100px;
+  }
+  ion-item-group{
+    //width: 92%;
+    //margin-left: 4%;
+  }
+  .segment-content{
+    margin-top: 30px;
+    width: 92%;
+    margin-left: 4%;
+  }
+}
