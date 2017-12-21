@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { SampleScanPage } from '../pages/sample-scan/sample-scan';
 import { BloodCountPage } from '../pages/blood-count/blood-count';
 import { MalariaTestPage } from '../pages/malaria-test/malaria-test';
+import { G6pdPage } from '../pages/g6pd/g6pd';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,7 +16,7 @@ import { MalariaTestPage } from '../pages/malaria-test/malaria-test';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = MalariaTestPage;
+  rootPage: any = G6pdPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -28,7 +29,7 @@ export class MyApp {
        { title: 'Sample scan', component: SampleScanPage },
       { title: 'Blood count', component: BloodCountPage },
       { title: 'Malaria test', component: MalariaTestPage },
-      { title: 'Add G6PD test', component: ListPage },
+      { title: 'Add G6PD test', component: G6pdPage },
       { title: 'Expert advice', component: ListPage },
       { title: 'Done', component: HomePage },
     ];

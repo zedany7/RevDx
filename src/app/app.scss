@@ -31,20 +31,19 @@
   margin-top: 40px;
   font-size: 30px;
   line-height: 30px;
-  span{
+}
+span.expert-adviceS{
+  line-height: 30px;
+  margin-left: 60px;
+  ion-icon{
+    font-size: 30px;
     line-height: 30px;
-    margin-left: 60px;
-    ion-icon{
-      font-size: 30px;
-      line-height: 30px;
-      color: rgb(46, 83, 149);
-    }
-    i{
-      margin-left: 2px;
-      border-left: 1px #ccdee8 solid;
-      padding-left: 7px;
-      font-size: 30px;
-    }
+    color: rgb(46, 83, 149);
   }
-
+  i{
+    margin-left: 2px;
+    border-left: 1px #ccdee8 solid;
+    padding-left: 7px;
+    font-size: 30px;
+  }
 }

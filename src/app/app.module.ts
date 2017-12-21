@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { SampleScanPage } from '../pages/sample-scan/sample-scan';
 import { BloodCountPage } from '../pages/blood-count/blood-count';
 import { MalariaTestPage } from '../pages/malaria-test/malaria-test';
+import { G6pdPage } from '../pages/g6pd/g6pd';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -20,7 +21,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     SampleScanPage,
     BloodCountPage,
-    MalariaTestPage
+    MalariaTestPage,
+    G6pdPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     SampleScanPage,
     BloodCountPage,
-    MalariaTestPage
+    MalariaTestPage,
+    G6pdPage
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,22 @@
+page-g6pd {
+  .results {
+    padding-top: 30px;
+    .title {
+      font-weight: 400;
+      font-size: 20px;
+    }
+    .value {
+      color: red;
+      font-size: 20px;
+      margin-left: 40px;
+    }
+  }
+  .instructions {
+    margin-top: 40px;
+    .ins-line {
+      font-size: 19px !important;
+      color: black;
+      font-weight: 200;
+    }
+  }
+}
