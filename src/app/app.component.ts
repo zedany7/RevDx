@@ -8,6 +8,8 @@ import { ListPage } from '../pages/list/list';
 import { SampleScanPage } from '../pages/sample-scan/sample-scan';
 import { BloodCountPage } from '../pages/blood-count/blood-count';
 import { MalariaTestPage } from '../pages/malaria-test/malaria-test';
+import { MapPage } from '../pages/map/map';
+
 import { G6pdPage } from '../pages/g6pd/g6pd';
 
 @Component({
@@ -16,7 +18,7 @@ import { G6pdPage } from '../pages/g6pd/g6pd';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = G6pdPage;
+  rootPage: any = MapPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -30,8 +32,8 @@ export class MyApp {
       { title: 'Blood count', component: BloodCountPage },
       { title: 'Malaria test', component: MalariaTestPage },
       { title: 'Add G6PD test', component: G6pdPage },
-      { title: 'Expert advice', component: ListPage },
-      { title: 'Done', component: HomePage },
+      // { title: 'Map', component: ListPage },
+      { title: 'Done', component: MapPage },
     ];
 
   }

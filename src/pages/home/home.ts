@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import {ListPage} from '../list/list'
+import {SampleScanPage} from '../sample-scan/sample-scan';
+import {MapPage} from '../map/map';
 
 @Component({
   selector: 'page-home',
@@ -14,7 +15,10 @@ export class HomePage {
 
   scanYourSample()
   {
-    this.navCtrl.setRoot(ListPage);
+    this.navCtrl.setRoot(SampleScanPage);
+  }
+  back(){
+    this.navCtrl.setRoot(MapPage);
   }
 
 }

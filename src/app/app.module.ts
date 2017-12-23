@@ -9,8 +9,9 @@ import { SampleScanPage } from '../pages/sample-scan/sample-scan';
 import { BloodCountPage } from '../pages/blood-count/blood-count';
 import { MalariaTestPage } from '../pages/malaria-test/malaria-test';
 import { G6pdPage } from '../pages/g6pd/g6pd';
+import { MapPage } from '../pages/map/map';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
-
+import { AgmCoreModule } from '@agm/core';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -22,12 +23,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SampleScanPage,
     BloodCountPage,
     MalariaTestPage,
-    G6pdPage
+    G6pdPage,
+    MapPage
   ],
   imports: [
     BrowserModule,
     IonicImageViewerModule,
     IonicModule.forRoot(MyApp),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyB-ziqpuMMH52jxcevWRuFiRPeuD09gn9U'
+    })
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -37,7 +43,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SampleScanPage,
     BloodCountPage,
     MalariaTestPage,
-    G6pdPage
+    G6pdPage,
+    MapPage
   ],
   providers: [
     StatusBar,
