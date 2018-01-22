@@ -27,9 +27,11 @@
 }
 .bottom-fab-icons{
   font-size: 70px;
-  color: rgb(46, 83, 149);
+  color: rgb(62, 67, 71);
 }
-
+.bar-button::after{
+  color: rgb(62, 67, 71);
+}
 .expert-advice{
   position: relative;
   margin-top: 40px;
@@ -38,7 +40,7 @@
 }
 span.expert-adviceS{
   line-height: 30px;
-  margin-left: 60px;
+  margin-left: 30px;
   ion-icon{
     font-size: 30px;
     line-height: 30px;
@@ -49,5 +51,17 @@ span.expert-adviceS{
     border-left: 1px #ccdee8 solid;
     padding-left: 7px;
     font-size: 30px;
+  }
+}
+
+.menu-inner {
+ .item-inner
+ {
+   border-bottom: 1px solid rgb(44, 49, 53) !important;
+ }
+  .scroll-content,.toolbar-background-md,.item-md{
+    color: rgb(107, 172, 204);
+    background-color: rgb(62, 67, 71) !important;
+
   }
 }

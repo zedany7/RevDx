@@ -4,7 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { SampleScanPage } from '../pages/sample-scan/sample-scan';
 import { BloodCountPage } from '../pages/blood-count/blood-count';
 import { MalariaTestPage } from '../pages/malaria-test/malaria-test';
@@ -31,7 +30,7 @@ export class MyApp {
        { title: 'Sample scan', component: SampleScanPage },
       { title: 'Blood count', component: BloodCountPage },
       { title: 'Malaria test', component: MalariaTestPage },
-      { title: 'Add G6PD test', component: G6pdPage },
+      { title: 'G6PD test', component: G6pdPage },
       // { title: 'Map', component: ListPage },
       { title: 'Done', component: MapPage },
     ];
